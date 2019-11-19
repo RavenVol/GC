@@ -1,20 +1,20 @@
 import React from 'react';
-import { Switch, Router } from 'react-router-dom';
+
+import '../styles/css/reset.css';
 
 import Header from './Header';
-
-import '../styles/normalize.css';
-import '../styles/app.css';
 
 const App = () => {
   return (
     <>
       <header>
-        <Header />
+        <Header lang='ru'/>
       </header>
+
       <main>
-        Main Section
+        
       </main>
+
       <footer>
         Footer Section
       </footer>

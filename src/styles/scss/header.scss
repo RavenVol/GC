@@ -1,0 +1,106 @@
+@import './variables.scss';
+
+.header {
+  position: fixed;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  box-sizing: border-box;
+  background-color: $menuBgColor;
+
+  border-bottom: 1px solid $headerBorderColor;
+  box-shadow: 0 0 5px 5px $headerBorderColor;
+
+  &__headerLogo {
+
+  }
+
+  &__info {
+
+  }
+
+  &__menu {
+
+  }
+}
+
+.logo {
+  &__link {
+    text-decoration: none;
+
+    &--image {
+      height: $nemuElementHeight;
+      
+      cursor: pointer;
+
+      transition: 300ms ease;
+    }
+    &--image:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-areas:
+    "cName cAddress cPhones"
+    "cName cMail cPhones";
+  grid-column-gap: 20px;
+
+  &__companyName {
+    grid-area: cName;
+    height: $nemuElementHeight;
+    padding: 0 $nemuElementHeight / 10;
+    box-sizing: border-box;
+    font-size: $nemuElementHeight - $nemuElementHeight / 5;
+    font-weight: bold;
+  }
+
+  &__companyAddress, &__companyMail {
+    height: $nemuElementHeight / 2;
+    box-sizing: border-box;
+    font-size: ($nemuElementHeight - $nemuElementHeight / 5) / 2;
+  }
+
+  &__companyAddress {
+    grid-area: cAddress;
+    padding-top: $nemuElementHeight / 10;
+  }
+
+  &__companyMail {
+    grid-area: cMail;
+    padding-bottom: $nemuElementHeight / 10;
+  }
+
+  &__companyPhones {
+    grid-area: cPhones;
+    height: $nemuElementHeight / 2;
+    box-sizing: border-box;
+    font-size: ($nemuElementHeight - $nemuElementHeight / 5) / 2;
+  
+    &--UT {
+      padding-top: $nemuElementHeight / 10;
+    }
+
+    &--KS {
+      padding-bottom: $nemuElementHeight / 10;
+    }
+  }
+
+
+
+}
+
+.menu {
+  &__button {
+    height: $nemuElementHeight;
+    border: 1px solid $colorMainBlue;
+    background-color: transparent;
+  }
+}
+
+
