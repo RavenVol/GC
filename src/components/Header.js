@@ -12,8 +12,8 @@ const Header = ({lang}) => {
       <div className="header__logo logo">
         <a className="logo_link" href="/">
           <img 
-            className="logo_link--image"
-            src=""
+            className="logo__link--image"
+            src="https://github.com/RavenVol/GC/blob/develop/src/data/gemokod_logo.jpg?raw=true"
             alt={headerInfo.alt} 
             longdesc="/" /*full address of a home page will be here*/
           />

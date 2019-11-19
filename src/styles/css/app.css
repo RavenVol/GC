@@ -1,1 +1,16 @@
+body {
+  /*https://proforientator.ru/publications/articles/New%20Folder/medicina.jpg*/
+  background-image: url('http://www.greenwich-company.com/wp-content/uploads/2016/08/shutterstock_133503068-768x512.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.trial {
+  width: 200px;
+  height: 172px;
+  box-shadow: 0 0 10px 10px #000;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin: 50px 50px;
+  background-color: #cc121288;
+  
+}

@@ -9,10 +9,10 @@
   justify-content: space-between;
   align-content: center;
   box-sizing: border-box;
-  background-color: $menuBgColor;
+  // background-image: linear-gradient(transparent, $colorMainBlue, transparent);
+  background-color: transparent;
 
-  border-bottom: 1px solid $headerBorderColor;
-  box-shadow: 0 0 5px 5px $headerBorderColor;
+  box-shadow: 0 -5px 15px 5px $colorMainBlue;
 
   &__headerLogo {
 
@@ -90,9 +90,6 @@
       padding-bottom: $nemuElementHeight / 10;
     }
   }
-
-
-
 }
 
 .menu {
@@ -100,6 +97,7 @@
     height: $nemuElementHeight;
     border: 1px solid $colorMainBlue;
     background-color: transparent;
+    outline: none;
   }
 }
 

@@ -6,9 +6,8 @@
   justify-content: space-between;
   align-content: center;
   box-sizing: border-box;
-  background-color: white;
-  border-bottom: 1px solid #bbb;
-  box-shadow: 0 0 5px 5px #bbb;
+  background-color: transparent;
+  box-shadow: 0 -5px 15px 5px #095684;
 }
 .logo__link {
   text-decoration: none;
@@ -63,8 +62,9 @@
 
 .menu__button {
   height: 40px;
-  border: 1px solid blue;
+  border: 1px solid #095684;
   background-color: transparent;
+  outline: none;
 }
 
 /*# sourceMappingURL=header.css.map */

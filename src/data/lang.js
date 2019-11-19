@@ -33,5 +33,33 @@ export const lang_header = {
   }
 }
 
+export const lang_mainMenu = {
+  en: {
+    home: 'Home',
+    contacts: 'Contacts',
+    products: 'Products',
+    prices: 'Price List',
+    faqs: 'FAQs',
+    analises: 'Analises',
+    gifts: 'Gift certificates',
+  },
 
+  ru: {
+    home: 'Домашняя',
+    contacts: 'Контакты',
+    products: 'Услуги',
+    prices: 'Цены',
+    faqs: 'Частые вопросы',
+    gifts: 'Подарочные сертификаты',
+  },
+
+  ua: {
+    home: 'Домашня',
+    contacts: 'Контакти',
+    products: 'Послуги',
+    prices: 'Ціни',
+    faqs: 'Часті питання',
+    gifts: 'Подарункові сертифікати',
+  }
+}
 

@@ -1,25 +1,36 @@
 import React from 'react';
 
+import '../styles/css/app.css';
 import '../styles/css/reset.css';
 
-import Header from './Header';
+import Header from './Header1';
 
-const App = () => {
-  return (
-    <>
-      <header>
-        <Header lang='ru'/>
-      </header>
+class App extends React.Component{
+  constructor() {
+    super();
 
-      <main>
+    this.state={
+      
+    }
+  }
+
+  render() {
+    return (
+      <>
+        <header>
+          <Header lang='ru'/>
+        </header>
         
-      </main>
+        <main>
+          
+        </main>
 
-      <footer>
-        Footer Section
-      </footer>
-    </>
-  );
+        <footer>
+
+        </footer>
+      </>
+    );
+  }
 }
 
 export default App;
