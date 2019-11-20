@@ -35,6 +35,7 @@ export const lang_header = {
 
 export const lang_mainMenu = {
   en: {
+    menu: 'Menu',
     home: 'Home',
     contacts: 'Contacts',
     products: 'Products',
@@ -42,24 +43,35 @@ export const lang_mainMenu = {
     faqs: 'FAQs',
     analises: 'Analises',
     gifts: 'Gift certificates',
+
+    catchword1: 'With love!',
+    catchword2: 'Start losing weight with HemoCode!',
   },
 
   ru: {
+    menu: 'Меню',
     home: 'Домашняя',
     contacts: 'Контакты',
     products: 'Услуги',
     prices: 'Цены',
     faqs: 'Частые вопросы',
     gifts: 'Подарочные сертификаты',
+
+    catchword1: 'С любовью к Вам!',
+    catchword2: 'Начни худеть с ГемоКод!'
   },
 
   ua: {
+    menu: 'Меню',
     home: 'Домашня',
     contacts: 'Контакти',
     products: 'Послуги',
     prices: 'Ціни',
     faqs: 'Часті питання',
     gifts: 'Подарункові сертифікати',
+
+    catchword1: 'З любов\'ю до Вас!',
+    catchword2: 'Почни худнути з Гемокод!',
   }
 }
 

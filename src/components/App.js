@@ -10,17 +10,32 @@ class App extends React.Component{
     super();
 
     this.state={
-      
+      menuVisible: false,
+      mainMenuText: "",
     }
+  }
+
+  мenuShow = (show) => {
+    this.setState({menuVisible: show});
+  }
+
+  changeMainMenuText = (text) => {
+    this.setState({mainMenuText: text});
   }
 
   render() {
     return (
       <>
         <header>
-          <Header lang='ru'/>
+          <Header 
+            lang='en'
+            menuVisible={this.state.menuVisible}
+            mainMenuText={this.state.mainMenuText}
+            мenuShow={this.мenuShow}
+            changeMainMenuText={this.changeMainMenuText}
+          />
         </header>
-        
+
         <main>
           
         </main>

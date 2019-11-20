@@ -1,0 +1,224 @@
+@import './variables.scss';
+
+.mainMenu {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+
+  &--scaled {
+    animation: menuScale $menuAnimationTime/2 ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  &--unscaled {
+    transform: scale(2.7);
+    animation: menuUnScale $menuAnimationTime/2 ease-in-out $menuAnimationTime;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menuScale {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(2.7);
+    }
+  }
+
+  @keyframes menuUnScale {
+    0% {
+      transform: scale(2.7);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(-100%, -5%);
+
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid $colorMainRed;
+    border-radius: 3px;
+    color: $colorMainBlue;
+    font-size: 0.8vw;
+
+    &--visible {
+      display: block;
+    }
+
+    &--invisible {
+      display: none;
+    }
+  }
+}
+
+.menuWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &--full {
+    width: $nemuElementSize * 2.7 * 1.1;
+    height: $nemuElementSize * 2.7 * 0.866; 
+  }
+
+  &--small {
+    width: $nemuElementSize;
+    height: $nemuElementSize * 0.866; 
+  }
+}
+
+.hexagonWrapper {
+  &__p1, &__p2, &__p3,
+  &__p4, &__p5, &__p6,
+  &__p7, &__p8, &__p9, &__p10 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+
+    perspective: 150px;
+    transform-style: preserve-3d;
+  }
+
+  &__p1 {
+    transform: translate(0, 0);
+  }
+
+  &__p2 {
+    transform: translateX(-155%);
+  }
+
+  &__p3 {
+    transform: translate(-77.5%, 52.5%);
+  }
+
+  &__p4 {
+    transform: translate(-232.5%, 52.5%);
+  }
+
+  &__p5 {
+    transform: translateY(102.5%);
+  }
+  
+  &__p6 {
+    transform: translate(-155%, 102.5%);
+  }
+
+  &__p7 {
+    transform: translate(-77.5%, 155%);
+  }
+
+  &__p8 {
+    transform: translate(-232.5%, 155%);
+  }
+
+  &__p9 {
+    transform: translateY(205%);
+  }
+
+  &__p10 {
+    transform: translate(-155%, 205%);
+  }
+}
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  box-sizing: border-box;
+  background-color: $colorMainBlue;
+
+  &--add {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: $nemuElementSize * 0.94;
+    height: $nemuElementSize * 0.866 * 0.94;
+  }
+
+  &:hover {
+    background-color: $colorMainRed;
+  }
+
+  &__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    width: $nemuElementSize / 2;
+  }
+
+  &__show {
+    opacity: 0;
+    width: $nemuElementSize;
+    height: $nemuElementSize * 0.866;
+    animation: hexagonAppear $menuAnimationTime ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  &__hide {
+    opacity: 1;
+    width: $nemuElementSize;
+    height: $nemuElementSize * 0.866;
+    animation: hexagonDisappear $menuAnimationTime*0.8 ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hexagonAppear {
+    0% {
+      opacity: 0;
+      transform: rotate3d(1, 1, 0, 90deg);
+    }
+
+    30% {
+      opacity: 0.3;
+      transform: rotate3d(1, 1, 0, 90deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes hexagonDisappear {
+    0% {
+      width: $nemuElementSize;
+      height: $nemuElementSize * 0.866;
+      opacity: 1;
+      transform: none;
+    }
+
+    99% {
+      width: $nemuElementSize;
+      height: $nemuElementSize * 0.866;
+      opacity: 0;
+      transform: rotate3d(1, 1, 0, 90deg);
+    }
+
+    100% {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      transform: rotate3d(1, 1, 0, 90deg);
+    }
+  }
+}
+
+
+@for $i from 1 to 11 {
+  .delay#{$i} {
+    animation-delay: $i * $menuAnimationTime / 10;
+  }
+}
+
