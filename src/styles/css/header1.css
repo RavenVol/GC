@@ -115,16 +115,16 @@
   background-color: #ffffff;
   width: 4.7vw;
   height: 4.0702vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hexagon:hover {
   background-color: #cc121288;
 }
 .hexagon__picture {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  width: 2.5vw;
+  width: 2.75vw;
+  height: auto;
 }
 .hexagon__show {
   opacity: 0;

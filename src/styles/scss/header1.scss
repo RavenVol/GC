@@ -144,6 +144,10 @@
     background-color: #ffffff;
     width: $nemuElementSize * 0.94;
     height: $nemuElementSize * 0.866 * 0.94;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &:hover {
@@ -151,11 +155,8 @@
   }
 
   &__picture {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
-    width: $nemuElementSize / 2;
+    width: $nemuElementSize * 0.55;
+    height: auto;
   }
 
   &__show {
