@@ -105,6 +105,10 @@
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   box-sizing: border-box;
   background-color: #095784dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms ease;
 }
 .hexagon--add {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
