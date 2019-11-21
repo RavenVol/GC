@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+.languageBar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  &__button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: $nemuElementHeight;
+    padding: 5px;
+    
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+
+    color: $colorMainBlue;
+    background-color: $colorMainWhite;
+    border: 2px solid $colorMainRed;
+    border-radius: 5px;
+
+    transition: 300ms ease;
+
+    &--selected {
+      color: $colorMainWhite;
+      background-color: $colorMainBlue;
+    }
+
+    &:hover {
+      color: $colorMainWhite;
+      background-color: $colorMainRed;
+      border: 2px solid $colorMainBlue;
+    }
+  }
+}
+
+
+

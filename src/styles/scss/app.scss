@@ -1,6 +1,8 @@
+@import './variables.scss';
+
 body {
   /*https://proforientator.ru/publications/articles/New%20Folder/medicina.jpg , http://www.greenwich-company.com/wp-content/uploads/2016/08/shutterstock_133503068-768x512.jpg*/
-  background-image: url("http://welformedical.com/wp-content/uploads/2017/12/medical-web-designs.jpg");
+  background-image: url('http://welformedical.com/wp-content/uploads/2017/12/medical-web-designs.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10,7 +12,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 3vw;
+  height: $nemuElementHeight;
 }
 
-/*# sourceMappingURL=app.css.map */

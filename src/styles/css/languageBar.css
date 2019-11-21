@@ -1,0 +1,39 @@
+.languageBar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.languageBar__item {
+  display: inline-block;
+  padding: 5px;
+}
+.languageBar__button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 3vw;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #095784dd;
+  background-color: #ffffffdd;
+  border: 2px solid #cc121288;
+  border-radius: 5px;
+  transition: 300ms ease;
+}
+.languageBar__button--selected {
+  color: #ffffffdd;
+  background-color: #095784dd;
+}
+.languageBar__button:hover {
+  color: #ffffffdd;
+  background-color: #cc121288;
+  border: 2px solid #095784dd;
+}
+
+/*# sourceMappingURL=languageBar.css.map */
