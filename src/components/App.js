@@ -28,7 +28,7 @@ class App extends React.Component{
       <>
         <header>
           <Header 
-            lang='en'
+            lang='ru'
             menuVisible={this.state.menuVisible}
             mainMenuText={this.state.mainMenuText}
             мenuShow={this.мenuShow}

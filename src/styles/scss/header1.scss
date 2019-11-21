@@ -2,8 +2,20 @@
 
 .mainMenu {
   position: fixed;
-  top: 5px;
-  right: 5px;
+  
+  @if ($menuVerticalLayout == "top") {
+    top: 5px;
+  }
+  @if ($menuVerticalLayout == "bottom") {
+    bottom: 5px;
+  }
+
+  @if ($menuHorisontalLayout == "left") {
+    left: 5px;
+  }
+  @if ($menuHorisontalLayout == "right") {
+    right: 5px;
+  }  
 
   &--scaled {
     animation: menuScale $menuAnimationTime/2 ease-in-out;
@@ -11,8 +23,8 @@
   }
 
   &--unscaled {
-    transform: scale(2.7);
-    animation: menuUnScale $menuAnimationTime/2 ease-in-out $menuAnimationTime;
+    transform: scale($menuScaleRatio);
+    animation: menuUnScale $menuAnimationTime/2 ease-in-out $menuAnimationTime+200ms;
     animation-fill-mode: forwards;
   }
 
@@ -22,13 +34,13 @@
     }
 
     100% {
-      transform: scale(2.7);
+      transform: scale($menuScaleRatio);
     }
   }
 
   @keyframes menuUnScale {
     0% {
-      transform: scale(2.7);
+      transform: scale($menuScaleRatio);
     }
 
     100% {
@@ -38,9 +50,32 @@
 
   &__text {
     position: absolute;
-    top: 50%;
-    left: -10%;
-    transform: translate(-100%, -5%);
+
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        top: 50%;
+        right: -10%;
+        transform: translate(100%, -5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        top: 50%;
+        left: -10%;
+        transform: translate(-100%, -5%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        bottom: 50%;
+        right: -10%;
+        transform: translate(100%, 5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        bottom: 50%;
+        left: -10%;
+        transform: translate(-100%, 5%);
+      }
+    }
 
     box-sizing: border-box;
     padding: 5px;
@@ -62,12 +97,23 @@
 
 .menuWrapper {
   position: absolute;
-  top: 0;
-  right: 0;
+  @if ($menuVerticalLayout == "top") {
+    top: 0;
+  }
+  @if ($menuVerticalLayout == "bottom") {
+    bottom: 0;
+  }
+
+  @if ($menuHorisontalLayout == "left") {
+    left: 0;
+  }
+  @if ($menuHorisontalLayout == "right") {
+    right: 0;
+  }
 
   &--full {
-    width: $nemuElementSize * 2.7 * 1.1;
-    height: $nemuElementSize * 2.7 * 0.866; 
+    width: $nemuElementSize * $menuScaleRatio * 1.1;
+    height: $nemuElementSize * $menuScaleRatio * 0.866; 
   }
 
   &--small {
@@ -81,8 +127,19 @@
   &__p4, &__p5, &__p6,
   &__p7, &__p8, &__p9, &__p10 {
     position: absolute;
-    top: 0;
-    right: 0;
+    @if ($menuVerticalLayout == "top") {
+      top: 0;
+    }
+    @if ($menuVerticalLayout == "bottom") {
+      bottom: 0;
+    }
+  
+    @if ($menuHorisontalLayout == "left") {
+      left: 0;
+    }
+    @if ($menuHorisontalLayout == "right") {
+      right: 0;
+    }  
     box-sizing: border-box;
 
     perspective: 150px;
@@ -94,39 +151,152 @@
   }
 
   &__p2 {
-    transform: translateX(-155%);
+    @if ($menuHorisontalLayout == "left") {
+      transform: translateX(155%);
+    }
+    @if ($menuHorisontalLayout == "right") {
+      transform: translateX(-155%);
+    }  
   }
 
   &__p3 {
-    transform: translate(-77.5%, 52.5%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(77.5%, 52.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-77.5%, 52.5%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(77.5%, -52.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-77.5%, -52.5%);
+      }
+    }
   }
 
   &__p4 {
-    transform: translate(-232.5%, 52.5%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(232.5%, 52.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-232.5%, 52.5%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(232.5%, -52.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-232.5%, -52.5%);
+      }
+    }
   }
 
   &__p5 {
-    transform: translateY(102.5%);
+    @if ($menuVerticalLayout == "top") {
+      transform: translateY(102.5%);
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      transform: translateY(-102.5%);
+    }
   }
   
   &__p6 {
-    transform: translate(-155%, 102.5%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(155%, 102.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-155%, 102.5%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(155%, -102.5%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-155%, -102.5%);
+      }
+    }
   }
 
   &__p7 {
-    transform: translate(-77.5%, 155%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(77.5%, 155%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-77.5%, 155%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(77.5%, -155%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-77.5%, -155%);
+      }
+    }
   }
 
   &__p8 {
-    transform: translate(-232.5%, 155%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(232.5%, 155%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-232.5%, 155%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(232.5%, -155%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-232.5%, -155%);
+      }
+    }
   }
 
   &__p9 {
-    transform: translateY(205%);
+    @if ($menuVerticalLayout == "top") {
+      transform: translateY(205%);
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      transform: translateY(-205%);
+    }
   }
 
   &__p10 {
-    transform: translate(-155%, 205%);
+    @if ($menuVerticalLayout == "top") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(155%, 205%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-155%, 205%);
+      }
+    }
+
+    @if ($menuVerticalLayout == "bottom") {
+      @if ($menuHorisontalLayout == "left") {
+        transform: translate(155%, -205%);
+      }
+      @if ($menuHorisontalLayout == "right") {
+        transform: translate(-155%, -205%);
+      }
+    }
   }
 }
 

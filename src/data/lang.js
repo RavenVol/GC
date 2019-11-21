@@ -45,7 +45,7 @@ export const lang_mainMenu = {
     gifts: 'Gift certificates',
 
     catchword1: 'With love!',
-    catchword2: 'Start losing weight with HemoCode!',
+    catchword2: 'Start losing weight with GemoCode!',
   },
 
   ru: {

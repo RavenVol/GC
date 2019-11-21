@@ -1,12 +1,15 @@
 $colorMainBlue: #095784dd;
 $colorMainRed: #cc121288;
 
-
+$menuVerticalLayout: "top";
+$menuHorisontalLayout: "left";
 $nemuElementSize: 5vw;
-$menuAnimationTime: 700ms;
-// $nemuElementHeight: 40px;
-// $menuBgColor: rgba(255, 255, 255, 0.3);
+$menuScaleRatio: 2.7;
+$menuAnimationTime: 500ms;
 
+
+$nemuElementHeight: 40px;
+$menuBgColor: rgba(255, 255, 255, 0.3);
 $headerBorderColor: #ccc;
 
 

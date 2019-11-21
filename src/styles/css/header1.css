@@ -1,15 +1,15 @@
 .mainMenu {
   position: fixed;
   top: 5px;
-  right: 5px;
+  left: 5px;
 }
 .mainMenu--scaled {
-  animation: menuScale 350ms ease-in-out;
+  animation: menuScale 250ms ease-in-out;
   animation-fill-mode: forwards;
 }
 .mainMenu--unscaled {
   transform: scale(2.7);
-  animation: menuUnScale 350ms ease-in-out 700ms;
+  animation: menuUnScale 250ms ease-in-out 700ms;
   animation-fill-mode: forwards;
 }
 @keyframes menuScale {
@@ -31,8 +31,8 @@
 .mainMenu__text {
   position: absolute;
   top: 50%;
-  left: -10%;
-  transform: translate(-100%, -5%);
+  right: -10%;
+  transform: translate(100%, -5%);
   box-sizing: border-box;
   padding: 5px;
   background-color: transparent;
@@ -51,7 +51,7 @@
 .menuWrapper {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 .menuWrapper--full {
   width: 14.85vw;
@@ -65,7 +65,7 @@
 .hexagonWrapper__p1, .hexagonWrapper__p2, .hexagonWrapper__p3, .hexagonWrapper__p4, .hexagonWrapper__p5, .hexagonWrapper__p6, .hexagonWrapper__p7, .hexagonWrapper__p8, .hexagonWrapper__p9, .hexagonWrapper__p10 {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   box-sizing: border-box;
   perspective: 150px;
   transform-style: preserve-3d;
@@ -74,31 +74,31 @@
   transform: translate(0, 0);
 }
 .hexagonWrapper__p2 {
-  transform: translateX(-155%);
+  transform: translateX(155%);
 }
 .hexagonWrapper__p3 {
-  transform: translate(-77.5%, 52.5%);
+  transform: translate(77.5%, 52.5%);
 }
 .hexagonWrapper__p4 {
-  transform: translate(-232.5%, 52.5%);
+  transform: translate(232.5%, 52.5%);
 }
 .hexagonWrapper__p5 {
   transform: translateY(102.5%);
 }
 .hexagonWrapper__p6 {
-  transform: translate(-155%, 102.5%);
+  transform: translate(155%, 102.5%);
 }
 .hexagonWrapper__p7 {
-  transform: translate(-77.5%, 155%);
+  transform: translate(77.5%, 155%);
 }
 .hexagonWrapper__p8 {
-  transform: translate(-232.5%, 155%);
+  transform: translate(232.5%, 155%);
 }
 .hexagonWrapper__p9 {
   transform: translateY(205%);
 }
 .hexagonWrapper__p10 {
-  transform: translate(-155%, 205%);
+  transform: translate(155%, 205%);
 }
 
 .hexagon {
@@ -108,7 +108,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 350ms ease;
+  transition: 250ms ease;
 }
 .hexagon--add {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -134,14 +134,14 @@
   opacity: 0;
   width: 5vw;
   height: 4.33vw;
-  animation: hexagonAppear 700ms ease-in-out;
+  animation: hexagonAppear 500ms ease-in-out;
   animation-fill-mode: forwards;
 }
 .hexagon__hide {
   opacity: 1;
   width: 5vw;
   height: 4.33vw;
-  animation: hexagonDisappear 560ms ease-in-out;
+  animation: hexagonDisappear 400ms ease-in-out;
   animation-fill-mode: forwards;
 }
 @keyframes hexagonAppear {
@@ -180,43 +180,43 @@
 }
 
 .delay1 {
-  animation-delay: 70ms;
+  animation-delay: 50ms;
 }
 
 .delay2 {
-  animation-delay: 140ms;
+  animation-delay: 100ms;
 }
 
 .delay3 {
-  animation-delay: 210ms;
+  animation-delay: 150ms;
 }
 
 .delay4 {
-  animation-delay: 280ms;
+  animation-delay: 200ms;
 }
 
 .delay5 {
-  animation-delay: 350ms;
+  animation-delay: 250ms;
 }
 
 .delay6 {
-  animation-delay: 420ms;
+  animation-delay: 300ms;
 }
 
 .delay7 {
-  animation-delay: 490ms;
+  animation-delay: 350ms;
 }
 
 .delay8 {
-  animation-delay: 560ms;
+  animation-delay: 400ms;
 }
 
 .delay9 {
-  animation-delay: 630ms;
+  animation-delay: 450ms;
 }
 
 .delay10 {
-  animation-delay: 700ms;
+  animation-delay: 500ms;
 }
 
 /*# sourceMappingURL=header1.css.map */
