@@ -17,6 +17,8 @@
   border: 5px solid $colorMainBlue;
   border-radius: 20%;
 
+  box-shadow: 0px -4px 10px -5px rgba(0,0,0,0.7);
+
   &__message {
     position: absolute;
     top: 0;

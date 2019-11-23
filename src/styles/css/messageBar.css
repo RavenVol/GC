@@ -10,6 +10,7 @@
   background-color: #fff;
   border: 5px solid #095784dd;
   border-radius: 20%;
+  box-shadow: 0px -4px 10px -5px rgba(0, 0, 0, 0.7);
 }
 .messageBar__message {
   position: absolute;

@@ -118,9 +118,13 @@ export const lang_footer = {
     mails: [["gemokod@ukr.net", "gemokod@ukr.net"]],
 
     socials_title: "Join Us:",
-    socials_viber: ["+38 (067) 504-61-00", "viber://chat?number=+3880675046100", ""],
-    socials_facebook: ["facebook", "https://www.facebook.com/gemokod.kiev/", ""],
-    socials_instagram: ["instagram", "https://www.instagram.com/gemokod.kiev/", ""],
+    socials_viber: ["viber +38 (067) 504-61-00", "viber://chat?number=+3880675046100", "Viber for PC must be installed"],
+    socials_facebook: ["we on facebook", "https://www.facebook.com/gemokod.kiev/", "We on Facebook"],
+    socials_instagram: ["we on instagram", "https://www.instagram.com/gemokod.kiev/", "We on Instagram"],
+
+    license: "Licese",
+    copy: "GemoCode Ukraine",
+    author: ["designed & developed by Raven", ""],
   },
   
   ru: {
@@ -142,9 +146,13 @@ export const lang_footer = {
     mails: [["gemokod@ukr.net", "gemokod@ukr.net"]],
 
     socials_title: "Присоединиться:",
-    socials_viber: ["+38 (067) 504-61-00", "viber://chat?number=+3880675046100", ""],
-    socials_facebook: ["facebook", "https://www.facebook.com/gemokod.kiev/", ""],
-    socials_instagram: ["instagram", "https://www.instagram.com/gemokod.kiev/", ""],
+    socials_viber: ["viber +38 (067) 504-61-00", "viber://chat?number=+3880675046100", "Должен быть установлен Viber для ПК"],
+    socials_facebook: ["мы на facebook", "https://www.facebook.com/gemokod.kiev/", "Мы на Facebook"],
+    socials_instagram: ["мы на instagram", "https://www.instagram.com/gemokod.kiev/", "Мы на Instagram"],
+
+    license: "Лицензия МОЗ Украины №____",
+    copy: "ГемоКод Украина",
+    author: ["designed & developed by Raven", ""],
   },
 
   ua: {
@@ -166,9 +174,13 @@ export const lang_footer = {
     mails: [["gemokod@ukr.net", "gemokod@ukr.net"]],
 
     socials_title: "Приєднуйся:",
-    socials_viber: ["+38 (067) 504-61-00", "viber://chat?number=+3880675046100", ""],
-    socials_facebook: ["facebook", "https://www.facebook.com/gemokod.kiev/", ""],
-    socials_instagram: ["instagram", "https://www.instagram.com/gemokod.kiev/", ""],
+    socials_viber: ["viber +38 (067) 504-61-00", "viber://chat?number=+3880675046100", "Має бути встановлений Viber для ПК"],
+    socials_facebook: ["ми на facebook", "https://www.facebook.com/gemokod.kiev/", "Ми на Facebook"],
+    socials_instagram: ["ми на instagram", "https://www.instagram.com/gemokod.kiev/", "Ми на Instagram"],
+
+    license: "Ліцензія МОЗ України №____",
+    copy: "ГемоКод Україна",
+    author: ["designed & developed by Raven", ""],
   }
 }
 

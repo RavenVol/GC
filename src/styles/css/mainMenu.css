@@ -2,7 +2,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: fixed;
   top: 5px;
-  left: 5px;
+  right: 5px;
 }
 .mainMenu--scaled {
   animation: menuScale 250ms ease-in-out;
@@ -32,8 +32,8 @@
 .mainMenu__text {
   position: absolute;
   top: 50%;
-  right: -10%;
-  transform: translate(100%, -5%);
+  left: -10%;
+  transform: translate(-100%, -5%);
   box-sizing: border-box;
   padding: 5px;
   background-color: transparent;
@@ -52,7 +52,7 @@
 .menuWrapper {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 .menuWrapper--full {
   width: 14.85vw;
@@ -66,7 +66,7 @@
 .hexagonWrapper__p1, .hexagonWrapper__p2, .hexagonWrapper__p3, .hexagonWrapper__p4, .hexagonWrapper__p5, .hexagonWrapper__p6, .hexagonWrapper__p7, .hexagonWrapper__p8, .hexagonWrapper__p9, .hexagonWrapper__p10 {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   box-sizing: border-box;
   perspective: 150px;
   transform-style: preserve-3d;
@@ -75,31 +75,31 @@
   transform: translate(0, 0);
 }
 .hexagonWrapper__p2 {
-  transform: translateX(155%);
+  transform: translateX(-155%);
 }
 .hexagonWrapper__p3 {
-  transform: translate(77.5%, 52.5%);
+  transform: translate(-77.5%, 52.5%);
 }
 .hexagonWrapper__p4 {
-  transform: translate(232.5%, 52.5%);
+  transform: translate(-232.5%, 52.5%);
 }
 .hexagonWrapper__p5 {
   transform: translateY(102.5%);
 }
 .hexagonWrapper__p6 {
-  transform: translate(155%, 102.5%);
+  transform: translate(-155%, 102.5%);
 }
 .hexagonWrapper__p7 {
-  transform: translate(77.5%, 155%);
+  transform: translate(-77.5%, 155%);
 }
 .hexagonWrapper__p8 {
-  transform: translate(232.5%, 155%);
+  transform: translate(-232.5%, 155%);
 }
 .hexagonWrapper__p9 {
   transform: translateY(205%);
 }
 .hexagonWrapper__p10 {
-  transform: translate(155%, 205%);
+  transform: translate(-155%, 205%);
 }
 
 .hexagon {
