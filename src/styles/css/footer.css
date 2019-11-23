@@ -1,0 +1,177 @@
+.footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  display: grid;
+  grid-template-areas: "logo    address menu phones" "logo    address menu mails" "logo    address menu socials" "license license copy author";
+  grid-template-columns: 1fr 2fr 4fr 3fr;
+  grid-gap: 10px;
+  justify-content: center;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 5px solid #cc121288;
+  background-color: #f5f7f8;
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__address {
+  grid-area: address;
+}
+.footer__menu {
+  grid-area: menu;
+  justify-self: center;
+}
+.footer__phones {
+  grid-area: phones;
+}
+.footer__mails {
+  grid-area: mails;
+}
+.footer__socials {
+  grid-area: socials;
+}
+
+.logo__link {
+  text-decoration: none;
+}
+.logo__image {
+  width: 10vw;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+.address__title {
+  align-self: center;
+  margin-bottom: 5px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #cc121288;
+}
+.address__location, .address__notation {
+  font-size: 1.1vw;
+  line-height: 1.15vw;
+  color: #777;
+}
+.address:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.menu__item {
+  padding: 5px;
+}
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #aaa;
+  text-transform: uppercase;
+  transition: 500ms;
+  overflow: hidden;
+  z-index: 5;
+}
+.menu__link:hover {
+  color: #fff;
+}
+.menu__link:hover::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: #095784dd;
+  transition: 500ms;
+  animation: footerMenuAnimation 500ms linear forwards;
+}
+
+@keyframes footerMenuAnimation {
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 4px;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+.phones, .mails, .socials {
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-column-gap: 10px;
+  justify-content: center;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  font-size: 1.1vw;
+}
+.phones__title, .mails__title, .socials__title {
+  grid-area: title;
+  justify-self: end;
+  color: #cc121288;
+  text-transform: uppercase;
+}
+
+.phones {
+  grid-template-areas: "title phone-ut1" ". phone-ut2" ". phone-ks";
+}
+.phones__ut1 {
+  grid-area: phone-ut1;
+  color: #777;
+}
+.phones__ut2 {
+  grid-area: phone-ut2;
+  color: #777;
+}
+.phones__ks {
+  grid-area: phone-ks;
+  color: #777;
+}
+
+.mails {
+  grid-template-areas: "title mail";
+}
+.mails__link {
+  text-decoration: none;
+  color: #aaa;
+  transition: 500ms ease;
+}
+.mails__link:hover {
+  color: #095784dd;
+}
+.mails__link:visited {
+  color: #cc121288;
+}
+
+.socials {
+  grid-template-areas: "title social";
+}
+
+/*# sourceMappingURL=footer.css.map */

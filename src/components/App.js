@@ -5,6 +5,8 @@ import '../styles/css/reset.css';
 
 import MainMenu from './MainMenu';
 import LanguageBar from './LanguageBar';
+import Footer from './Footer';
+import { lang_statistics } from '../data/lang';
 
 class App extends React.Component{
   constructor() {
@@ -14,7 +16,22 @@ class App extends React.Component{
       lang: 'ru',
       menuVisible: false,
       mainMenuText: "",
+      statisticMessages: {},
     }
+  }
+
+  componentDidMount = () => {
+    this.setState({statisticMessages: lang_statistics })
+    this.prepairStatisticMessages();
+  }
+
+  prepairStatisticMessages = () => {
+    const statisticMessages = lang_statistics;
+    const delay = statisticMessages[this.state.lang].length * 2300 + 300;
+
+    setInterval(() => {
+      this.setState({ statisticMessages: {} }); 
+      this.setState({ statisticMessages })}, delay);
   }
 
   мenuShow = (show) => {
@@ -48,11 +65,14 @@ class App extends React.Component{
         </header>
 
         <main>
-        
+          <div style={{width: "100%", height: "480px"}}></div>
         </main>
 
-        <footer>
-
+        <footer style={{position: "relative"}}>
+          <Footer
+            lang={this.state.lang}
+            messages={this.state.statisticMessages}
+          />
         </footer>
       </>
     );

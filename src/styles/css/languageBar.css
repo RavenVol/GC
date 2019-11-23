@@ -1,5 +1,6 @@
 .languageBar {
-  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -10,30 +11,32 @@
 }
 .languageBar__item {
   display: inline-block;
-  padding: 5px;
+  padding: 5px 3px;
 }
 .languageBar__button {
   display: inline-block;
   box-sizing: border-box;
   width: 3vw;
-  padding: 5px;
+  padding: 3px 5px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
   color: #095784dd;
   background-color: #ffffffdd;
-  border: 2px solid #cc121288;
+  border-bottom: 3px solid #cc121288;
   border-radius: 5px;
   transition: 300ms ease;
 }
 .languageBar__button--selected {
+  font-weight: bold;
   color: #ffffffdd;
   background-color: #095784dd;
 }
 .languageBar__button:hover {
+  font-weight: bold;
   color: #ffffffdd;
   background-color: #cc121288;
-  border: 2px solid #095784dd;
+  border-bottom: 3px solid #095784dd;
 }
 
 /*# sourceMappingURL=languageBar.css.map */

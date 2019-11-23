@@ -12,7 +12,7 @@ const LanguageBar = ({ changeLanguage, lang }) => (
         }
         onClick={() => changeLanguage("ru")}
       >
-        ru
+        RU
       </button>
     </li>
 
@@ -24,7 +24,7 @@ const LanguageBar = ({ changeLanguage, lang }) => (
         }
         onClick={() => changeLanguage("ua")}
       >
-        ua
+        UA
       </button>
     </li>
 
@@ -36,7 +36,7 @@ const LanguageBar = ({ changeLanguage, lang }) => (
         }
         onClick={() => changeLanguage("en")}
       >
-        en
+        EN
       </button>
     </li>
   </ul>
