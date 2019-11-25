@@ -1,38 +1,3 @@
-export const lang_header = {
-  en: {
-    cName: 'MC "GemoCode"',
-    cAddress: 'Voloshs\'ka str. 24, Kiev, Ukraine',
-    cPhoneUT: '+38 (044) 425-83-74',
-    cPhoneKS: '+38 (067) 504-61-00',
-    cMail: 'gemokod@ukr.net',
-
-    logoAlt: 'GemoCode Logo',
-    menuName: 'menu',
-  },
-
-  ru: {
-    cName: 'МЦ "Гемокод"',
-    cAddress: '04070, г. Киев, ул. Волошская 24',
-    cPhoneUT: '+38 (044) 425-83-74',
-    cPhoneKS: '+38 (067) 504-61-00',
-    cMail: 'gemokod@ukr.net',
-
-    logo_alt: 'Гемокод Лого',
-    menuName: 'меню',
-  },
-
-  ua: {
-    cName: 'МЦ "Гемокод"',
-    cAddress: '04070, м. Київ, вул. Волоська 24',
-    cPhoneUT: '+38 (044) 425-83-74',
-    cPhoneKS: '+38 (067) 504-61-00',
-    cMail: 'gemokod@ukr.net',
-
-    logo_alt: 'Гемокод Лого',
-    menuName: 'меню',
-  }
-}
-
 export const lang_mainMenu = {
   en: {
     menu: 'Menu',
@@ -73,7 +38,7 @@ export const lang_mainMenu = {
     catchword1: 'З любов\'ю до Вас!',
     catchword2: 'Почни худнути з Гемокод!',
   }
-}
+};
 
 export const lang_statistics = {
   en: [
@@ -96,7 +61,7 @@ export const lang_statistics = {
     "22 представництва в Україні", 
     "2500 лабораторних досліджень",
   ]
-}
+};
 
 export const lang_footer = {
   en: {
@@ -182,5 +147,812 @@ export const lang_footer = {
     copy: "ГемоКод Україна",
     author: ["designed & developed by Raven", ""],
   }
-}
+};
+
+export const lang_contacts = [
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  {
+    id: 'KIV',
+    city_pic: 'http://dreamkyiv.com/wp-content/uploads/2015/02/IMG_9949_sandm_majdan_SM.jpg',
+    phones: [
+      ['ut', '+38 (044) 425-83-74'], 
+      ['ut', '+38 (044) 425-83-75'], 
+      ['ks', '+38 (067) 504-61-00'],
+    ],
+    site: "http://www.gemokod.com.ua",
+    mails: [
+      ['gemokod@ukr.net', 'gemokod@ukr.net'],
+    ],
+    socials: [
+      ['vb', 'viber://chat?number=+3880675046100'],
+      ['fb', 'https://www.facebook.com/gemokod.kiev/'],
+      ['ig', 'https://www.instagram.com/gemokod.kiev/'],
+      // ['tw', ''],
+      // ['g+', ''],
+      // ['tg', '']
+    ],
+    geoPosition: { lat: 50.46884815, lng: 30.517627 },
+    en: {
+      city: 'Kiev',
+      name: 'GemoCode, MC',
+      address: 'Voloshs\'ka str. 24, Kiev, Ukraine',
+      address_notation: 'Kontractova Ploscha metro station',
+    },
+    ru: {
+      city: 'Киев',
+      name: 'МЦ "Гемокод"',
+      address: '04070, г. Киев, ул. Волошская 24',
+      address_notation: 'ст. м. Контрактовая площадь',
+    },
+    ua: {
+      city: 'Київ',
+      name: 'МЦ "Гемокод"',
+      address: '04070, м. Київ. вул. Волоська 24',
+      address_notation: 'ст. м. Контрактова площа',
+    },
+  },
+
+  {
+    id: 'ODA',
+    city_pic: 'https://victorytour.az/wp-content/uploads/2019/05/odessa.jpg',
+    phones: [
+      ['ks', '+38 (097) 468-20-82'], 
+      ['ut', '+38 (094) 947-10-60'],
+      ['ut', '+38 (048) 743-80-60'], 
+    ],
+    site: "https://estederm.com.ua/",
+    mails: [
+    ],
+    socials: [
+      ['fb', 'https://www.facebook.com/estederm.clinic/'],
+      ['ig', 'https://www.instagram.com/este_derm_cosmetology/'],
+    ],
+    geoPosition: { lat: 46.44503938, lng: 30.74892998 },
+    en: {
+      city: 'Odessa',
+      name: 'Este+Derm',
+      address: 'Zooparkovaya str. 2, Odessa, Ukraine',
+    },
+    ru: {
+      city: 'Одесса',
+      name: 'Эсте+Дерм',
+      address: 'г. Одесса, ул. Зоопарковая 2',
+    },
+    ua: {
+      city: 'Одеса',
+      name: 'Есте+Дерм',
+      address: 'м. Одеса. вул. Зоопаркова 2',
+    },
+  },
+  
+];
 

@@ -3,6 +3,7 @@ body {
   background-image: url("http://welformedical.com/wp-content/uploads/2017/12/medical-web-designs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .siteHeader {

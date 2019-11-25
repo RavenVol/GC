@@ -1,0 +1,267 @@
+@import './variables.scss';
+
+.contactsPage {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  // background-image: url('http://murka.lark.ru/patterns/cartographer.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+
+  width: 96vw;
+  margin: $nemuElementHeight auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-content: start;
+  justify-items: center;
+}
+
+.contact {
+  width: 16vw;
+  height: $contactHeight;
+  position: relative;
+  transition: $contactAnimationTime linear;
+
+  &__imageWrapper {
+    width: 16vw;
+    height: $contactHeight;
+    position: relative;
+
+    box-sizing: border-box;
+    border: 3px solid $colorMainBlue;
+
+    overflow: hidden;
+
+    transition: $contactAnimationTime linear;
+  }
+
+  &__image {
+    height: $contactHeight;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+  }
+
+  &__preInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: #00000077;
+    color: #ffffff;
+
+    transition: $contactAnimationTime ease-in-out;
+  }
+
+  &__additional {
+    width: 0vw;
+    height: $contactHeight;
+
+    position: absolute;
+    top: 0;
+    left: 16vw;
+
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 3px solid $colorMainBlue;
+    border-left: none;
+
+    overflow: hidden;
+
+    transition: $contactAnimationTime linear;
+  }
+
+  &:hover {
+    width: 32vw;
+
+    .contact__preInfo {
+      top: 85%;
+    }
+
+    .contact__imageWrapper {
+      width: 10vw;
+    }
+
+    .preInfo {
+      background-color: #000000aa; 
+    }
+
+    // .preInfo__name {
+    //   color: gold;
+    //   font-size: 1.2vw;
+    //   font-weight: bold;
+    //   text-transform: none;
+    // } 
+    
+    .preInfo__city {
+      color: gold;
+    }
+
+    .preInfo__name, .preInfo__address, .preInfo__phone {
+      opacity: 0;
+    }
+
+    .contact__additional {
+      width: 22vw;
+      left: 10vw;
+    }
+  }
+}
+
+.preInfo {
+  &__name {
+    width: 100%;
+    font-size: 1.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+
+    transition: 500ms linear;
+  }
+
+  &__city {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+
+    font-size: 1.5vw;
+    text-transform: uppercase;
+
+    transition: 500ms linear;
+  }  
+
+  &__address {
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    transition: 500ms linear;
+  }
+
+  &__phone {
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 50%);
+
+    transition: 500ms linear;
+  }
+}
+
+.additional {
+  &__map {
+    width: 22vw;
+    height: 70%;
+    background-color: black;
+    color: white;
+  }
+
+  &__info {
+    width: 22vw;
+    height: 30%;
+
+    background-color: $colorMainBlue;
+    color: #ffffff;
+
+    font-size: 0.87vw;
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-areas:
+   "name name"
+   "address phone"
+   "notation phone"
+   ". phone"
+   "site mail"
+   "socials socials";
+  
+  align-items: center;
+
+  grid-template-rows: 1.1vw 0.87vw 0.87vw 0.87vw 1.3vw 1.3vw;
+  
+  &__name {
+    grid-area: name;
+    justify-self: center;
+    font-size: 1.1vw;
+  }
+  
+  &__address {
+    grid-area: address;
+  }
+
+  &__addressNotation {
+    grid-area: notation;
+  }
+
+  &__phones {
+    grid-area: phone;
+  }
+
+  &__site {
+    grid-area: site;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__mails {
+    grid-area: mail;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__mail {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__socials {
+    grid-area: socials;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__social {
+    width: 1.2vw;
+    height: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+  }
+
+  &__socialImage {
+    width: 1vw;
+    height: 1vw;
+  }
+
+}
+
+
+
+

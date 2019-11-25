@@ -6,6 +6,7 @@ import '../styles/css/reset.css';
 import MainMenu from './MainMenu';
 import LanguageBar from './LanguageBar';
 import Footer from './Footer';
+import Contacts from './Contacts';
 import { lang_statistics } from '../data/lang';
 
 class App extends React.Component{
@@ -64,8 +65,8 @@ class App extends React.Component{
           />
         </header>
 
-        <main>
-          <div style={{width: "100%", height: "480px"}}></div>
+        <main style={{width: "100%"}}>
+          <Contacts lang={this.state.lang}/>
         </main>
 
         <footer style={{position: "relative"}}>

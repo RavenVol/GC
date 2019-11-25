@@ -1,0 +1,190 @@
+.contactsPage {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 96vw;
+  margin: 3vw auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-content: start;
+  justify-items: center;
+}
+
+.contact {
+  width: 16vw;
+  height: 22vw;
+  position: relative;
+  transition: 500ms linear;
+}
+.contact__imageWrapper {
+  width: 16vw;
+  height: 22vw;
+  position: relative;
+  box-sizing: border-box;
+  border: 3px solid #095784dd;
+  overflow: hidden;
+  transition: 500ms linear;
+}
+.contact__image {
+  height: 22vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.contact__preInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000077;
+  color: #ffffff;
+  transition: 500ms ease-in-out;
+}
+.contact__additional {
+  width: 0vw;
+  height: 22vw;
+  position: absolute;
+  top: 0;
+  left: 16vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 3px solid #095784dd;
+  border-left: none;
+  overflow: hidden;
+  transition: 500ms linear;
+}
+.contact:hover {
+  width: 32vw;
+}
+.contact:hover .contact__preInfo {
+  top: 85%;
+}
+.contact:hover .contact__imageWrapper {
+  width: 10vw;
+}
+.contact:hover .preInfo {
+  background-color: #000000aa;
+}
+.contact:hover .preInfo__city {
+  color: gold;
+}
+.contact:hover .preInfo__name, .contact:hover .preInfo__address, .contact:hover .preInfo__phone {
+  opacity: 0;
+}
+.contact:hover .contact__additional {
+  width: 22vw;
+  left: 10vw;
+}
+
+.preInfo__name {
+  width: 100%;
+  font-size: 1.5vw;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  transition: 500ms linear;
+}
+.preInfo__city {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  transition: 500ms linear;
+}
+.preInfo__address {
+  width: 100%;
+  font-size: 1vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 500ms linear;
+}
+.preInfo__phone {
+  width: 100%;
+  font-size: 1vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 50%);
+  transition: 500ms linear;
+}
+
+.additional__map {
+  width: 22vw;
+  height: 70%;
+  background-color: black;
+  color: white;
+}
+.additional__info {
+  width: 22vw;
+  height: 30%;
+  background-color: #095784dd;
+  color: #ffffff;
+  font-size: 0.87vw;
+}
+
+.info {
+  display: grid;
+  grid-template-areas: "name name" "address phone" "notation phone" ". phone" "site mail" "socials socials";
+  align-items: center;
+  grid-template-rows: 1.1vw 0.87vw 0.87vw 0.87vw 1.3vw 1.3vw;
+}
+.info__name {
+  grid-area: name;
+  justify-self: center;
+  font-size: 1.1vw;
+}
+.info__address {
+  grid-area: address;
+}
+.info__addressNotation {
+  grid-area: notation;
+}
+.info__phones {
+  grid-area: phone;
+}
+.info__site {
+  grid-area: site;
+  text-decoration: none;
+  color: #ffffff;
+}
+.info__site:hover {
+  text-decoration: underline;
+}
+.info__mails {
+  grid-area: mail;
+  text-decoration: none;
+  color: #fff;
+}
+.info__mails:hover {
+  text-decoration: underline;
+}
+.info__mail {
+  text-decoration: none;
+  color: #fff;
+}
+.info__socials {
+  grid-area: socials;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info__social {
+  width: 1.2vw;
+  height: 1.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.info__socialImage {
+  width: 1vw;
+  height: 1vw;
+}
+
+/*# sourceMappingURL=contacts.css.map */
