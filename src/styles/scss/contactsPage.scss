@@ -1,0 +1,91 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=cyrillic,latin-ext');
+
+.contactsPage {
+  width: 100vw;
+  background-color: white;
+
+  &__mainHeader{
+    margin: $nemuElementHeight 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #aaa;
+  }
+
+  &__secondatyHeader{
+    margin: $nemuElementHeight 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 4vw;
+    text-align: center;
+
+    font-weight: bold;
+    color: #aaa;
+  }
+
+  &__mainContact, &__inTouch {
+    width: 96vw;
+    margin: 0 auto;
+  }
+}
+
+.mainContact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+
+  &__info, &__map {
+    width: 30vw;
+
+    border: 1px solid $colorMainBlue;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  &__map {
+    width: 60vw;
+  }
+
+}
+
+.mainContactInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5vw;
+
+  &__name {
+    font-size: 2vw;
+    text-align: center;
+    color: #999;
+  }
+
+  &__wrapper {
+    margin: 0.5vw 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__address, &__addressNotation, &__phone, 
+  &__site, &__mail {
+    text-align: right;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5vw 0;
+  }
+
+  &__social {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+

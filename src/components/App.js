@@ -6,8 +6,9 @@ import '../styles/css/reset.css';
 import MainMenu from './MainMenu';
 import LanguageBar from './LanguageBar';
 import Footer from './Footer';
-import Contacts from './Contacts';
+import ContactsPage from './ContactsPage';
 import { lang_statistics } from '../data/lang';
+import GemoProds from './GemoProds';
 
 class App extends React.Component{
   constructor() {
@@ -66,7 +67,8 @@ class App extends React.Component{
         </header>
 
         <main style={{width: "100%"}}>
-          <Contacts lang={this.state.lang}/>
+          {/* <ContactsPage lang={this.state.lang}/> */}
+          <GemoProds />
         </main>
 
         <footer style={{position: "relative"}}>

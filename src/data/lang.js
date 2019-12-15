@@ -956,3 +956,124 @@ export const lang_contacts = [
   
 ];
 
+export const lang_contactPage = {
+  en: {
+    mainHeader: 'Contact Us',
+    secondaryHeader: 'Our Representatives',
+    inTouchHeader: 'Get in touch',
+  },
+
+  ru: {
+    mainHeader: 'Контакты',
+    secondaryHeader: 'Наши Представительства',
+    inTouchHeader: 'Всегда на связи',
+  },
+
+  ua: {
+    mainHeader: 'Контакти',
+    secondaryHeader: 'Наші Представництва',
+    inTouchHeader: 'Завжди на зв\'язку',
+  }
+};
+
+export const lang_replyForm = {
+  en: {
+    name_placeholder: 'Name',
+    name_label: 'Name:',
+
+    email_placeholder: 'somebody@example.com',
+    email_label: 'E-Mail:',
+
+    tel_placeholder: `+38 (0XX) XXX-XX-XX`,
+    tel_label: 'Phone:',
+
+    message_placeholder: 'Type your message here',
+    message_label: 'Message:',
+
+    submit: 'Send',
+  },
+
+  ru: {
+    name_placeholder: 'Ваше Имя',
+    name_label: 'Имя:',
+
+    email_placeholder: 'somebody@example.com',
+    email_label: 'E-Mail:',
+
+    tel_placeholder: `+38 (0XX) XXX-XX-XX`,
+    tel_label: 'Телефон:',
+
+    message_placeholder: 'Напишите Ваше сообщение здесь',
+    message_label: 'Сообщение:',
+    
+    submit: 'Отправить',
+  },
+
+  ua: {
+    name_placeholder: 'Ваше Ім\'я',
+    name_label: 'Ім\'я:',
+
+    email_placeholder: 'somebody@example.com',
+    email_label: 'E-Mail:',
+
+    tel_placeholder: `+38 (0XX) XXX-XX-XX`,
+    tel_label: 'Телефон:',
+
+    message_placeholder: 'Напишіть Ваше повідомлення тут',
+    message_label: 'Повідомлення:',
+    
+    submit: 'Надіслати',
+  },
+}
+
+export const lang_gemoProds = {
+  en: [
+    {
+      title: "Plate 1"
+    },
+    {
+      title: "Plate 2"
+    },
+    {
+      title: "Plate 3"
+    },
+    {
+      title: "Plate 4"
+    },
+    {
+      title: "Plate 5"
+    },
+    {
+      title: "Plate 6"
+    },
+    {
+      title: "Plate 7"
+    },
+    {
+      title: "Plate 8"
+    },
+    {
+      title: "Plate 9"
+    },
+    {
+      title: "Plate 10"
+    },
+    {
+      title: "Plate 11"
+    }
+  ],
+
+  ru: [
+    {
+
+    }
+  ],
+
+  ua: [
+    {
+
+    }
+  ]
+}
+
+

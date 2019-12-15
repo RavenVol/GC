@@ -1,12 +1,7 @@
 @import './variables.scss';
 
-.contactsPage {
+.representativesPage {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  // background-image: url('http://murka.lark.ru/patterns/cartographer.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-attachment: fixed;
 
   width: 96vw;
   margin: $nemuElementHeight auto;
@@ -18,7 +13,7 @@
   justify-items: center;
 }
 
-.contact {
+.representative {
   width: 16vw;
   height: $contactHeight;
   position: relative;
@@ -81,11 +76,11 @@
   &:hover {
     width: 32vw;
 
-    .contact__preInfo {
+    .representative__preInfo {
       top: 85%;
     }
 
-    .contact__imageWrapper {
+    .representative__imageWrapper {
       width: 10vw;
     }
 
@@ -108,7 +103,7 @@
       opacity: 0;
     }
 
-    .contact__additional {
+    .representative__additional {
       width: 22vw;
       left: 10vw;
     }

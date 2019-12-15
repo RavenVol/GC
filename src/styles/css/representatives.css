@@ -1,4 +1,4 @@
-.contactsPage {
+.representativesPage {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 96vw;
   margin: 3vw auto;
@@ -9,13 +9,13 @@
   justify-items: center;
 }
 
-.contact {
+.representative {
   width: 16vw;
   height: 22vw;
   position: relative;
   transition: 500ms linear;
 }
-.contact__imageWrapper {
+.representative__imageWrapper {
   width: 16vw;
   height: 22vw;
   position: relative;
@@ -24,14 +24,14 @@
   overflow: hidden;
   transition: 500ms linear;
 }
-.contact__image {
+.representative__image {
   height: 22vw;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
 }
-.contact__preInfo {
+.representative__preInfo {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,7 +41,7 @@
   color: #ffffff;
   transition: 500ms ease-in-out;
 }
-.contact__additional {
+.representative__additional {
   width: 0vw;
   height: 22vw;
   position: absolute;
@@ -54,25 +54,25 @@
   overflow: hidden;
   transition: 500ms linear;
 }
-.contact:hover {
+.representative:hover {
   width: 32vw;
 }
-.contact:hover .contact__preInfo {
+.representative:hover .representative__preInfo {
   top: 85%;
 }
-.contact:hover .contact__imageWrapper {
+.representative:hover .representative__imageWrapper {
   width: 10vw;
 }
-.contact:hover .preInfo {
+.representative:hover .preInfo {
   background-color: #000000aa;
 }
-.contact:hover .preInfo__city {
+.representative:hover .preInfo__city {
   color: gold;
 }
-.contact:hover .preInfo__name, .contact:hover .preInfo__address, .contact:hover .preInfo__phone {
+.representative:hover .preInfo__name, .representative:hover .preInfo__address, .representative:hover .preInfo__phone {
   opacity: 0;
 }
-.contact:hover .contact__additional {
+.representative:hover .representative__additional {
   width: 22vw;
   left: 10vw;
 }
@@ -187,4 +187,4 @@
   height: 1vw;
 }
 
-/*# sourceMappingURL=contacts.css.map */
+/*# sourceMappingURL=representatives.css.map */
